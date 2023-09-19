@@ -46,7 +46,7 @@ console.log('fommmmmmm', formData)
 
   return (
     <div>
-     <article className="bg-white rounded-[20px] py-[30px] lg:px-[40px] px-8 space-y-7">
+     <article className="bg-white rounded-[20px] py-[30px]  lg:px-[40px] px-8 space-y-7 ">
    
      {Object.keys(formData).every((key) => formData[key] === '') ? (
       <div className=' flex justify-center items-center h-[100%]  p-20 flex-col'>
@@ -74,18 +74,18 @@ console.log('fommmmmmm', formData)
     <div className='w-full flex justify-between h-[30%]  p-5'>
       <div className='flex flex-col gap-9  p-2 justify-center text-center'>
      { formData.phoneNumber &&(
-      <div className='flex flex-row text-center justify-between items-center'>
+      <div className='flex flex-row text-center justify-start items-center'>
     <button className="mr-2 rounded-full bg-[#E9F9EB] p-2">
       
       <WhtuppIcon/>
       </button>
       <div>
-      <h3 className=' text-xl'>{formData.phoneNumber}</h3></div>
+      <h3 className=' text-xl justify-start'>{formData.phoneNumber}</h3></div>
       </div>
   )}
   {
     formData.email &&(
-      <div className='flex flex-row text-center justify-between items-center'>
+      <div className='flex flex-row text-center justify-start items-center'>
       <button className="mr-2 rounded-full bg-[#EBE6F9] p-2">
       <MailIcon/>
       </button>
@@ -97,7 +97,7 @@ console.log('fommmmmmm', formData)
       
       <div className='flex flex-col gap-9 p-2'>
       {formData.instaLink &&(
-        <div className='flex flex-row text-center justify-between items-center'>
+        <div className='flex flex-row text-center justify-start items-center'>
         <button className="mr-2 rounded-full bg-[#FFE9E9] p-2">
       <InstaIcon/>
       
@@ -107,7 +107,7 @@ console.log('fommmmmmm', formData)
 
       )}
       {formData.youtubeLink &&(
-        <div className='flex flex-row text-center justify-between items-center '>
+        <div className='flex flex-row text-center justify-start items-center '>
         <button className="mr-2 rounded-full bg-[#FFE9E9] p-2">
         <YtIcon/>
         </button>
@@ -145,7 +145,7 @@ console.log('fommmmmmm', formData)
                     <button onClick={() => setCurrentStep('social')} className={currentStep === 'social' ? 'active-button' : ''}>Social</button>
                   </div>
                   <div className='flex-col'>
-                <label style={{color:'black', fontWeight:'400' , fontSize:'16px',marginRight:'75%' }}>Enter Name*</label>
+                <label style={{color:'black', fontWeight:'400' , fontSize:'16px',marginRight:'65%' }}>Enter Name*</label>
                 <input
                   className="input-field"
                   type="text"
@@ -156,7 +156,7 @@ console.log('fommmmmmm', formData)
                 />
                 </div>
                 <div>
-                  <label style={{color:'black', fontWeight:'400' , fontSize:'16px',marginRight:'75%' }}>Enter Email*</label>
+                  <label style={{color:'black', fontWeight:'400' , fontSize:'16px',marginRight:'65%' }}>Enter Email*</label>
                   <input
                   className="input-field"
                   type="email"
